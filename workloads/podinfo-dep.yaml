@@ -48,14 +48,14 @@ spec:
         env:
         - name: PODINFO_UI_MESSAGE
           value: "Greetings human!"
-        livenessProbe:
-          httpGet:
-            path: /healthz
-            port: 9898
-        readinessProbe:
-          httpGet:
-            path: /readyz
-            port: 9898
+        # livenessProbe:
+        #   httpGet:
+        #     path: /healthz
+        #     port: 9898
+        # readinessProbe:
+        #   httpGet:
+        #     path: /readyz
+        #     port: 9898
         resources:
           limits:
             cpu: 1000m
